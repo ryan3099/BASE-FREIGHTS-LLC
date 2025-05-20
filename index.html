@@ -8,68 +8,60 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      background: #f4f4f4;
       color: #222;
     }
     header {
-      background: url('https://images.unsplash.com/photo-1611580446429-e3182ad73c90?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.1.0') no-repeat center center/cover;
+      background: #002B45;
       color: white;
       text-align: center;
-      padding: 90px 20px;
+      padding: 80px 20px;
     }
     header h1 {
-      font-size: 38px;
-      background-color: rgba(0,0,0,0.6);
-      display: inline-block;
-      padding: 15px 30px;
-      border-radius: 10px;
+      font-size: 40px;
+      margin: 0;
     }
     section {
-      padding: 60px 20px;
-    }
-    .section-pair {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 40px;
       align-items: center;
-      margin-bottom: 60px;
+      padding: 60px 10%;
+      gap: 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
     }
-    .text-block, .img-block {
+    section:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: #f0f2f5;
+    }
+    .text {
       flex: 1;
       min-width: 300px;
     }
-    .text-block {
-      padding: 10px 20px;
-    }
-    .img-block img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .contact-box {
-      text-align: center;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      max-width: 500px;
-      margin: auto;
-    }
-    h2 {
-      color: #1a3d5d;
+    .text h2 {
+      color: #002B45;
       margin-bottom: 10px;
     }
+    .text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .image {
+      flex: 1;
+      min-width: 300px;
+    }
+    .image img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
     footer {
-      background-color: #1a3d5d;
+      background: #002B45;
       color: white;
       text-align: center;
-      padding: 25px;
-    }
-    a {
-      color: #1a3d5d;
+      padding: 30px;
     }
   </style>
 </head>
@@ -77,140 +69,73 @@
 
 <header>
   <h1>BASE FREIGHTS LLC</h1>
-  <p>Efficient Freight & Logistics Services – Sherman Oaks, CA</p>
+  <p>Logistics & Freight Experts – Est. 2025 – Sherman Oaks, CA</p>
 </header>
 
-<section class="section-pair">
-  <div class="text-block">
-    <h2>01. Who We Are</h2>
-    <p>BASE FREIGHTS LLC is a logistics and freight management company operating with precision and speed since 2025.</p>
+<section>
+  <div class="text">
+    <h2>01. Company Overview</h2>
+    <p>Base Freights LLC provides end-to-end freight solutions with a focus on speed, reliability, and visibility across every shipment.</p>
   </div>
-  <div class="img-block">
-    <img src="https://images.unsplash.com/photo-1611580446429-e3182ad73c90?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.1.0" alt="freight1">
-  </div>
-</section>
-
-<section class="section-pair">
-  <div class="img-block">
-    <img src="https://images.unsplash.com/photo-1638636206910-49cdd0af6d3c?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0" alt="freight2">
-  </div>
-  <div class="text-block">
-    <h2>02. Our Mission</h2>
-    <p>Deliver cargo safely, on time, and with full tracking transparency. We prioritize efficiency and sustainability.</p>
+  <div class="image">
+    <img src="https://images.unsplash.com/photo-1743543195200-2430a41346e9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="freight">
   </div>
 </section>
 
-<section class="section-pair">
-  <div class="text-block">
-    <h2>03. Trucking</h2>
-    <p>Full-service trucking across state lines and nationwide. Trusted routes and optimized logistics.</p>
+<section>
+  <div class="text">
+    <h2>02. Fleet & Vehicles</h2>
+    <p>Our diverse fleet includes high-capacity trucks and specialty trailers ensuring safe and efficient deliveries across the country.</p>
   </div>
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?truck,logistics" alt="trucking">
-  </div>
-</section>
-
-<section class="section-pair">
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?warehouse,storage" alt="warehouse">
-  </div>
-  <div class="text-block">
-    <h2>04. Storage Solutions</h2>
-    <p>We provide climate-controlled storage facilities for high-value and time-sensitive shipments.</p>
+  <div class="image">
+    <img src="https://plus.unsplash.com/premium_photo-1661883424371-0475867e85fb?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.1.0" alt="fleet">
   </div>
 </section>
 
-<section class="section-pair">
-  <div class="text-block">
-    <h2>05. Ocean Freight</h2>
-    <p>International cargo handled from port to port with efficient maritime solutions.</p>
+<section>
+  <div class="text">
+    <h2>03. Cargo Handling</h2>
+    <p>We use state-of-the-art cargo loading techniques and safety protocols to secure all goods before transit.</p>
   </div>
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?ship,port" alt="ocean">
-  </div>
-</section>
-
-<section class="section-pair">
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?airplane,cargo" alt="air freight">
-  </div>
-  <div class="text-block">
-    <h2>06. Air Freight</h2>
-    <p>Expedited delivery through strategic airline partners for global reach.</p>
+  <div class="image">
+    <img src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="handling">
   </div>
 </section>
 
-<section class="section-pair">
-  <div class="text-block">
-    <h2>07. Tracking</h2>
-    <p>Track your shipment 24/7 with our custom portal and live updates.</p>
+<section>
+  <div class="text">
+    <h2>04. Technology-Driven Dispatch</h2>
+    <p>With our dispatch technology, we provide real-time updates and route optimizations that reduce costs and increase delivery speed.</p>
   </div>
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?tracking,technology" alt="tracking">
-  </div>
-</section>
-
-<section class="section-pair">
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?fleet,delivery" alt="fleet">
-  </div>
-  <div class="text-block">
-    <h2>08. Fleet</h2>
-    <p>Our modern fleet includes electric and fuel-efficient vehicles for optimized delivery.</p>
+  <div class="image">
+    <img src="https://plus.unsplash.com/premium_photo-1682144324433-ae1ee89a0238?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0" alt="dispatch">
   </div>
 </section>
 
-<section class="section-pair">
-  <div class="text-block">
-    <h2>09. Dispatch</h2>
-    <p>Centralized dispatch center ensuring accurate routing and quick response time.</p>
+<section>
+  <div class="text">
+    <h2>05. Warehouse Logistics</h2>
+    <p>From short-term staging to long-term storage, our warehouses support inventory control and fast order fulfillment.</p>
   </div>
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?dispatch,logistics" alt="dispatch">
-  </div>
-</section>
-
-<section class="section-pair">
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?support,logistics" alt="support">
-  </div>
-  <div class="text-block">
-    <h2>10. Support</h2>
-    <p>24/7 customer service ready to help with inquiries, reports, or shipment status.</p>
+  <div class="image">
+    <img src="https://images.unsplash.com/photo-1744707093125-a9b11d081652?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0" alt="warehouse">
   </div>
 </section>
 
-<section class="section-pair">
-  <div class="text-block">
-    <h2>11. Technology</h2>
-    <p>We use the latest transportation management systems (TMS) to streamline operations.</p>
+<section>
+  <div class="text">
+    <h2>06. Our Team & Support</h2>
+    <p>We’re a team of logistics professionals passionate about solving tough freight challenges. Always here for your questions and needs.</p>
   </div>
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?software,logistics" alt="tms">
-  </div>
-</section>
-
-<section class="section-pair">
-  <div class="img-block">
-    <img src="https://source.unsplash.com/800x600/?delivery,freight" alt="delivery">
-  </div>
-  <div class="text-block">
-    <h2>12. Future Plans</h2>
-    <p>Expansion into Canada and Mexico with new logistics hubs and green trucking initiatives by 2025.</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2 style="text-align:center">Contact Information</h2>
-  <div class="contact-box">
-    <p><strong>Email:</strong> <a href="mailto:contact@basefreights.shop">contact@basefreights.shop</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+14245409076">424-540-9076</a></p>
-    <p><strong>Location:</strong> Sherman Oaks, CA</p>
+  <div class="image">
+    <img src="https://plus.unsplash.com/premium_photo-1664302037749-f24d1344ee2b?q=80&w=2728&auto=format&fit=crop&ixlib=rb-4.1.0" alt="team">
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 BASE FREIGHTS LLC. All rights reserved.</p>
+  <p>Contact: <a href="mailto:contact@basefreights.shop">contact@basefreights.shop</a> | Phone: <a href="tel:+14245409076">424-540-9076</a></p>
+  <p>Location: Sherman Oaks, CA</p>
+  <p>&copy; 2025 BASE FREIGHTS LLC. All Rights Reserved.</p>
 </footer>
 
 </body>
