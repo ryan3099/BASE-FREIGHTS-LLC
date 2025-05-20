@@ -1,67 +1,217 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BASE FREIGHTS LLC</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
     }
     header {
-      background-color: #003366;
+      background: url('https://images.unsplash.com/photo-1611580446429-e3182ad73c90?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.1.0') no-repeat center center/cover;
       color: white;
-      padding: 30px 20px;
       text-align: center;
+      padding: 90px 20px;
+    }
+    header h1 {
+      font-size: 38px;
+      background-color: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 10px;
     }
     section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      padding: 60px 20px;
     }
-    h1, h2 {
-      color: #003366;
+    .section-pair {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
     }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+    .text-block, .img-block {
+      flex: 1;
+      min-width: 300px;
+    }
+    .text-block {
+      padding: 10px 20px;
+    }
+    .img-block img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact-box {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    h2 {
+      color: #1a3d5d;
+      margin-bottom: 10px;
     }
     footer {
-      background-color: #003366;
+      background-color: #1a3d5d;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 25px;
+    }
+    a {
+      color: #1a3d5d;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
-  </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+<header>
+  <h1>BASE FREIGHTS LLC</h1>
+  <p>Efficient Freight & Logistics Services – Sherman Oaks, CA</p>
+</header>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
-    </div>
-  </section>
+<section class="section-pair">
+  <div class="text-block">
+    <h2>01. Who We Are</h2>
+    <p>BASE FREIGHTS LLC is a logistics and freight management company operating with precision and speed since 2025.</p>
+  </div>
+  <div class="img-block">
+    <img src="https://images.unsplash.com/photo-1611580446429-e3182ad73c90?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.1.0" alt="freight1">
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
-  </footer>
+<section class="section-pair">
+  <div class="img-block">
+    <img src="https://images.unsplash.com/photo-1638636206910-49cdd0af6d3c?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0" alt="freight2">
+  </div>
+  <div class="text-block">
+    <h2>02. Our Mission</h2>
+    <p>Deliver cargo safely, on time, and with full tracking transparency. We prioritize efficiency and sustainability.</p>
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="text-block">
+    <h2>03. Trucking</h2>
+    <p>Full-service trucking across state lines and nationwide. Trusted routes and optimized logistics.</p>
+  </div>
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?truck,logistics" alt="trucking">
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?warehouse,storage" alt="warehouse">
+  </div>
+  <div class="text-block">
+    <h2>04. Storage Solutions</h2>
+    <p>We provide climate-controlled storage facilities for high-value and time-sensitive shipments.</p>
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="text-block">
+    <h2>05. Ocean Freight</h2>
+    <p>International cargo handled from port to port with efficient maritime solutions.</p>
+  </div>
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?ship,port" alt="ocean">
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?airplane,cargo" alt="air freight">
+  </div>
+  <div class="text-block">
+    <h2>06. Air Freight</h2>
+    <p>Expedited delivery through strategic airline partners for global reach.</p>
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="text-block">
+    <h2>07. Tracking</h2>
+    <p>Track your shipment 24/7 with our custom portal and live updates.</p>
+  </div>
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?tracking,technology" alt="tracking">
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?fleet,delivery" alt="fleet">
+  </div>
+  <div class="text-block">
+    <h2>08. Fleet</h2>
+    <p>Our modern fleet includes electric and fuel-efficient vehicles for optimized delivery.</p>
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="text-block">
+    <h2>09. Dispatch</h2>
+    <p>Centralized dispatch center ensuring accurate routing and quick response time.</p>
+  </div>
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?dispatch,logistics" alt="dispatch">
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?support,logistics" alt="support">
+  </div>
+  <div class="text-block">
+    <h2>10. Support</h2>
+    <p>24/7 customer service ready to help with inquiries, reports, or shipment status.</p>
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="text-block">
+    <h2>11. Technology</h2>
+    <p>We use the latest transportation management systems (TMS) to streamline operations.</p>
+  </div>
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?software,logistics" alt="tms">
+  </div>
+</section>
+
+<section class="section-pair">
+  <div class="img-block">
+    <img src="https://source.unsplash.com/800x600/?delivery,freight" alt="delivery">
+  </div>
+  <div class="text-block">
+    <h2>12. Future Plans</h2>
+    <p>Expansion into Canada and Mexico with new logistics hubs and green trucking initiatives by 2025.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 style="text-align:center">Contact Information</h2>
+  <div class="contact-box">
+    <p><strong>Email:</strong> <a href="mailto:contact@basefreights.shop">contact@basefreights.shop</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+14245409076">424-540-9076</a></p>
+    <p><strong>Location:</strong> Sherman Oaks, CA</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 BASE FREIGHTS LLC. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
